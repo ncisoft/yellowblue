@@ -11,12 +11,14 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
+markdown: rdiscount
 exclude: ['node_modules', 'Gruntfile.js', 'package.json']
 
 highlighter: pygments
 
 # YB Settings
+gems: [jekyll-paginate]
 excerpt_separator: <!-- more -->
 paginate: 4
 comments: false
