@@ -1,7 +1,10 @@
 ---
 layout: post
-styles: [syntax]
+styles: syntax
 title: ss debug
+categories: gfw
+tags: shadowsocks
+
 
 ---
 

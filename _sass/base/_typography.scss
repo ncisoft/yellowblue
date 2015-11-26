@@ -71,16 +71,17 @@ li {
 }
 
 blockquote {
-	margin-left: $side-padding;
-	font-style: italic;
-	color: $gray;
+  padding: 1.33em;
+  font-style: italic;
+  border-left: 5px solid #7a7a7a;
 }
 
-.blockquote-footer {
-	font-size: .85em;
-	margin-top: $baseline/2;
-	color: darken($gray, 50%);
-	font-style: normal;
+blockquote footer {
+  font-size: .85rem;
+  font-style: normal;
+  background-color: #fff;
+  color: #7a7a7a;
+  border-color: transparent;
 }
 
 a {

@@ -1,9 +1,9 @@
 ---
 layout: post
-styles: [syntax]
+styles: syntax
 title: ss 最佳使用实践
 categories: gfw
-tags: ['shadowsocks']
+tags: shadowsocks
 comments: true
 
 ---
@@ -25,13 +25,14 @@ comments: true
 至于命令行操作，如果能指定代理，也是一样的，比如curl，有三种指定方式：
 在测试之前，手动修改 本地hosts文件，将www.google.com指向127.0.0.1，模拟dns被污染的场景。
 
-{% highlight bash linenos %}
     curl --proxy http://127.0.0.1:3128 -o /dev/nul https://www.google.com/images/google_favicon_128.png
     curl --socks5-hostname 127.0.0.1:1080 -o /dev/null  https://www.google.com/images/google_favicon_128.png
     curl --socks5 127.0.0.1:1080 -o /dev/null https://www.google.com/images/google_favicon_128.png
     $docker pull ubuntu:14.04
-{% endhighlight %}
 
+`dodo`
+
+<code class="language-markup">fafa</code>
 
 {% highlight java linenos %}
 // test
@@ -51,36 +52,6 @@ public void testThread() {
 	System.out.println("end wait");
 }
 {% endhighlight %}
-
-{% highlight javascript linenos %}
-//给id元素绑定两个单击和一个鼠标离开事件
-$('#id').bind('click', function() { alert('once'); });
-$('#id').bind('click', function() { alert('second'); });
-$('#id').bind('mouseout', function(){ alert('mouseout'); });
-
-//events对象的值
-{
-  'click': [
-    {// 此对象还有:data,guid,namespace属性
-      handler: function() { alert('once'); },
-      type: 'click'
-    },
-    {
-      handler: function() { alert('second'); },
-      type: 'click'
-    }
-  ],
-  'mouseout': [
-    {
-      handler: function(){ alert('mouseover'); },
-      type: 'mouseout'
-    }
-  ]
-}
-{% endhighlight %}
-
-
-
 
 测试结果表明就方式3不能正常访问，因为它用的是本地dns解析，而前两者都工作正常。
 
